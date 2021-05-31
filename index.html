@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function validate(){
+    var bride=document.getElementById("brideAge").value;
+     var groom=document.getElementById("groomAge").value;
+     if(bride >= 18 && groom >=21){
+         document.getElementById("result").innerHTML="Valid Marriage";
+     }
+     else{
+         document.getElementById("result").innerHTML="Invalid Marriage";
+     }
+}
+</script>    
+
+ <body>
+      <h1>Marriage Validator</h1>
+      
+      Bride's Age: <input type="number" id="brideAge"><br>
+      Groom's Age:<input type="number" id="groomAge"><br>
+      <button id="validate" onclick="validate()">Validate</button>
+     <div id="result"></div>
+     
+     
+ </body> 
+
+</html>
